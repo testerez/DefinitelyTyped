@@ -693,10 +693,10 @@ declare namespace math {
          * @param b An integer number
          * @returns The least common multiple
          */
-        lcm(a: number, b: number): number;
-        lcm(a: BigNumber, b: BigNumber): BigNumber;
-        lcm(a: MathArray, b: MathArray): MathArray;
-        lcm(a: Matrix, b: Matrix): Matrix;
+        lcm(...args: number[]): number;
+        lcm(...args: BigNumber[]): BigNumber;
+        lcm(...args: MathArray[]): MathArray;
+        lcm(...args: Matrix[]): Matrix;
 
         /**
          * Calculate the logarithm of a value. For matrices, the function is
